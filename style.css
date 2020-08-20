@@ -1,0 +1,156 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  font-family: arial,montserrat;
+  background-color: #fafafa;
+}
+nav{
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 1px 4px #686868;
+  position: sticky;
+  top:0%;
+}
+label.logo{
+  font-size: 35px;
+  font-weight: bold;
+  padding: 0 100px;
+  line-height: 80px;
+  color: #B80202;
+}
+
+nav ul{
+  float: right;
+  margin-right: 40px;
+}
+nav li{
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+nav a{
+  color: #686868;
+  font-size: 18px;
+  padding: 7px 10px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+a.active,a:hover{
+  transition: .5s;
+  color: #00bfff;
+
+  border: 1px solid white;
+}
+nav #icon{
+  color: #696969;
+  font-size: 30px;
+  float: right;
+  margin-right: 40px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+.flex-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 50px auto;
+  
+
+}
+.content{
+  width: auto;
+  
+}
+label.usr_logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: auto;
+
+}label.usr_logo img{
+  width:100px;
+}
+
+.content input[type="text"],[type="password"]{
+  border:1px solid #ccc;
+  border-radius: 3px;
+  height:40px;
+  padding: 0 10px;
+  background-color: #fff;
+  color:black;
+  width:210px;
+   font-size: 16px;
+}
+.content input[type="submit"]{
+  width:230px;
+  height:35px;
+  border:1px solid  #007DF0;
+  background-color:  #007DF0;
+  color: #fff;
+  font-weight: bold;
+}
+.footer{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+
+}.footer p{ color: #696969; }
+@media (max-width: 1048px){
+  label.logo{
+    font-size: 32px;
+    padding-left: 60px;
+  }
+  nav ul{
+    margin-right: 20px;
+  }
+  nav a{
+    font-size: 17px;
+  }
+}
+@media (max-width: 909px){
+  nav #icon{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2f3640;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav a{
+    font-size: 20px;
+  }
+  a.active,a:hover{
+    border: none;
+    color: #3498db;
+  }
+  nav ul.active{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(90vh - 80px);
+}
