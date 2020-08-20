@@ -1,5 +1,5 @@
 <?php
-$conn=mysqli_connect("localhost","root","abc123","Register");
+$conn=mysqli_connect("localhost","user name","your password","data base name");
 
 
 ?>
